@@ -7,9 +7,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <audio autoplay loop>
+  <audio id="musica" loop>
   <source src="musica.mp3" type="audio/mpeg">
 </audio>
+
+<button onclick="document.getElementById('musica').play()">
+  ▶️ Tocar música
+</button>
 
 <!-- TELA DE SENHA -->
 <div id="login" class="login">
@@ -92,3 +96,4 @@ function mostrarAmor() {
 </body>
 
 </html>
+
