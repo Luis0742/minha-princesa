@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background: #f2e6d8;
+  font-family: 'Georgia', serif;
+  overflow-x: hidden;
+}
+
+/* LOGIN */
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login button {
+  padding: 10px 20px;
+  background: #b04a6f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login h2 {
+  color: #8b3a5c;
+}
+
+/* SCRAPBOOK */
+.scrapbook {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #b04a6f;
+}
+
+.intro {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.pagina {
+  background: #fffaf2;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.25);
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 6px;
+  border: 6px solid #fff;
+}
+
+.destaque {
+  background: #fff0f5;
+}
+
+.carta {
+  background: #fff4f0;
+}
+
+.amor-btn {
+  background: #b04a6f;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+/* 💖 CORAÇÕES ANIMADOS */
+.corações::before {
+  content: "💖 💕 💗 💓 💘";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  animation: cair 8s linear infinite;
+  font-size: 22px;
+}
+
+@keyframes cair {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Minha Princesa 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TELA DE SENHA -->
+<div id="login" class="login">
+  <h2>💖 Área secreta 💖</h2>
+  <p>Digite a senha para entrar</p>
+  <input type="password" id="senha" placeholder="Senha 💕">
+  <button onclick="verificar()">Entrar</button>
+  <p id="erro"></p>
+</div>
+
+<!-- CONTEÚDO DO SCRAPBOOK -->
+<div id="conteudo" style="display:none;">
+
+<audio autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="corações"></div>
+
+<div class="scrapbook">
+  <h1>Para minha princesa perfeita 💕</h1>
+  <p class="intro">Uma surpresa feita com todo meu amor</p>
+
+  <div class="pagina polaroid">
+    <img src="fotos/1.jpg">
+    <p>Foi aqui que tudo começou… e meu coração já sabia 💖</p>
+  </div>
+
+  <div class="pagina polaroid">
+    <img src="fotos/2.jpg">
+    <p>Com você, cada momento vira lembrança eterna ✨</p>
+  </div>
+
+  <div class="pagina polaroid">
+    <img src="fotos/3.jpg">
+    <p>Seu sorriso é meu lugar favorito no mundo 💕</p>
+  </div>
+
+  <div class="pagina polaroid destaque">
+    <img src="fotos/4.jpg">
+    <p>Eu escolheria você em todas as vidas 🌹</p>
+  </div>
+
+  <div class="pagina carta">
+    <p>
+      Geovana,<br><br>
+      Esse cantinho é só nosso.
+      Obrigado por ser meu amor, minha paz e minha felicidade.
+      Eu te amo infinitamente 💖
+    </p>
+    <span>— Luiz Fernando</span>
+  </div>
+
+  <button class="amor-btn" onclick="mostrarAmor()">
+    💖 Eu te amo, minha princesa 💖
+  </button>
+
+  <p id="mensagem" class="mensagem"></p>
+</div>
+
+</div>
+
+<script>
+function verificar() {
+  const senha = document.getElementById("senha").value;
+  if (senha === "minhaprincesa") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("conteudo").style.display = "block";
+  } else {
+    document.getElementById("erro").innerText = "Senha incorreta 💔";
+  }
+}
+
+function mostrarAmor() {
+  document.getElementById("mensagem").innerHTML =
+    "Você é o amor da minha vida, minha princesa 👑💖";
+}
+</script>
+
+</body>
+</html>
